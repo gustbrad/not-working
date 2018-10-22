@@ -66,7 +66,7 @@ console.log(instrument)
 
         // change the component-container state
         this.setState({
-          errors: {}
+   
         });
 
         // set a message

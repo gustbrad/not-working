@@ -20,6 +20,16 @@ const SignUpFormMusician = ({
 
 
       <div className="row">
+
+			  <div className="form-group col-md-12">
+  				<button className="btn btn-secondary find-submit">
+	  				<Link to="/signupband" className={window.location.pathname === "/signupband" ? "nav-link active" : "nav-link"}>Band</Link>
+					</button>
+					<button className="btn btn-outline-secondary find-submit">
+						<Link to="/signupmusician" className={window.location.pathname === "/signupmusician" ? "nav-link active" : "nav-link"}>Musician</Link>
+					</button>
+				</div>
+
 			  <div className="form-group col-md-4">
           <label htmlFor="firstName">First Name: </label>
           <input
@@ -27,7 +37,6 @@ const SignUpFormMusician = ({
             className="form-control"
             placeholder="First Name"
             name="firstName"
-            errorText={errors.firstName}
             onChange={onChange}
             value={user.firstName}
           />
@@ -37,9 +46,10 @@ const SignUpFormMusician = ({
       	<div className="form-group col-md-4">
           <label htmlFor="lastName">Last Name: </label>
           <input
+          	type="text"
+            className="form-control"
             placeholder="Last Name"
             name="lastName"
-            errorText={errors.lastName}
             onChange={onChange}
             value={user.lastName}
           />
@@ -68,9 +78,10 @@ const SignUpFormMusician = ({
 			  <div className="form-group col-md-4">
           <label htmlFor="instrument">Instrument: </label>
           <input
+          	type="text"
+            className="form-control"
             placeholder="Instrument"
             name="instrument"
-            errorText={errors.instrument}
             onChange={onChange}
             value={user.instrument}
           />
@@ -79,9 +90,10 @@ const SignUpFormMusician = ({
         <div className="form-group col-md-4">
           <label htmlFor="experience">Experience: </label>
           <input
+          	type="text"
+            className="form-control"
             placeholder="Experience"
             name="experience"
-            errorText={errors.experience}
             onChange={onChange}
             value={user.experience}
           />
@@ -92,9 +104,10 @@ const SignUpFormMusician = ({
         <div className="form-group col-md-4">
           <label htmlFor="email">Email: </label>
           <input
+          	type="text"
+            className="form-control"
             placeholder="Email"
             name="email"
-            errorText={errors.email}
             onChange={onChange}
             value={user.email}
           />
@@ -105,11 +118,11 @@ const SignUpFormMusician = ({
         <div className="form-group col-md-4">
           <label htmlFor="password">Password: </label>
           <input
-            floatingLabelText="Password"
+            className="form-control"
+            placeholder="Password"
             type="password"
             name="password"
             onChange={onChange}
-            errorText={errors.password}
             value={user.password}
           />
         </div>
@@ -120,9 +133,10 @@ const SignUpFormMusician = ({
         <div className="form-group col-md-4">
           <label htmlFor="videoLink">Youtube Video Link: </label>
           <input
+          	type="text"
+            className="form-control"
             placeholder="https://youtu.be/A71aqufiNtQ"
             name="videoLink"
-            errorText={errors.videoLink}
             onChange={onChange}
             value={user.videoLink}
           />

@@ -21,12 +21,23 @@ const SignUpFormBand = ({
 
       
       <div className="row">
+
+			  <div className="form-group col-md-12">
+  				<button className="btn btn-secondary find-submit">
+	  				<Link to="/signupband" className={window.location.pathname === "/signupband" ? "nav-link active" : "nav-link"}>Band</Link>
+					</button>
+					<button className="btn btn-outline-secondary find-submit">
+						<Link to="/signupmusician" className={window.location.pathname === "/signupmusician" ? "nav-link active" : "nav-link"}>Musician</Link>
+					</button>
+				</div>
+
 			  <div className="form-group col-md-4">
           <label htmlFor="bandName">Band Name: </label>
           <input
+          type="text"
+          className="form-control"
             placeholder="Band Name"
             name="bandName"
-         
             onChange={onChange}
             value={user.bandName}
           />
@@ -35,9 +46,10 @@ const SignUpFormBand = ({
       	<div className="form-group col-md-4">
           <label htmlFor="musicGenre">Music Genre: </label>
           <input
+          type="text"
+          className="form-control"
             placeholder="Music Genre"
             name="musicGenre"
-     
             onChange={onChange}
             value={user.musicGenre}
           />
@@ -50,7 +62,7 @@ const SignUpFormBand = ({
             onChange={onChange}
             value={user.city}
           />
-				</div>
+			</div>
 
 				<div className="form-group col-md-2">
 					<label htmlFor="location">State	: </label><br></br>
@@ -66,9 +78,10 @@ const SignUpFormBand = ({
 			  <div className="form-group col-md-4">
           <label htmlFor="instrument">Instrument: </label>
           <input
+            type="text"
+            className="form-control"
             placeholder="Instrument Needed"
             name="instrument"
-        
             onChange={onChange}
             value={user.instrument}
           />
@@ -77,9 +90,10 @@ const SignUpFormBand = ({
         <div className="form-group col-md-4">
           <label htmlFor="experience">Experience: </label>
           <input
+            type="text"
+            className="form-control"
             placeholder="Experience"
             name="experience"
-
             onChange={onChange}
             value={user.experience}
           />
@@ -90,9 +104,10 @@ const SignUpFormBand = ({
         <div className="form-group col-md-4">
           <label htmlFor="email">Email: </label>
           <input
+            type="text"
+            className="form-control"
             placeholder="Email"
             name="email"
-   
             onChange={onChange}
             value={user.email}
           />
@@ -103,11 +118,11 @@ const SignUpFormBand = ({
         <div className="form-group col-md-4">
           <label htmlFor="password">Password: </label>
           <input
+            className="form-control"
             placeholder="Password"
             type="password"
             name="password"
             onChange={onChange}
-  
             value={user.password}
           />
         </div>
@@ -118,9 +133,10 @@ const SignUpFormBand = ({
         <div className="form-group col-md-4">
           <label htmlFor="videoLink">Youtube Video Link: </label>
           <input
+            type="text"
+            className="form-control"
             placeholder="https://youtu.be/A71aqufiNtQ"
             name="videoLink"
-       
             onChange={onChange}
             value={user.videoLink}
           />
@@ -131,9 +147,10 @@ const SignUpFormBand = ({
         <div className="form-group col-md-4">
           <label htmlFor="bandDescription">Band Description: </label>
           <input
+          type="text"
+            className="form-control"
             placeholder="Band Description"
             name="bandDescription"
-      
             onChange={onChange}
             value={user.bandDescription}
           />
