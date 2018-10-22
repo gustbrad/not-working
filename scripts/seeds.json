@@ -1,0 +1,155 @@
+{
+     "users" : [
+          {
+               "firstName" : "Francis",
+               "lastName" : "Biker",
+               "password" : "jellyfish",
+               "email" : "francisBiker@email.com",
+               "location" : "Philidelphia, Pennsylvania",
+               "isMusician" : true
+          },
+          {
+               "firstName" : "Zoey",
+               "lastName" : "MovieChick",
+               "password" : "dogfish",
+               "email" : "zoeyCinema@email.com",
+               "location" : "Buffalo, New York",
+               "isMusician" : true
+          },
+          {
+               "firstName" : "Bill",
+               "lastName" : "WarVeteran",
+               "password" : "catfish",
+               "location" : "billSoldier@email.com",
+               "city" : "Boston, Massachusettes",
+               "isMusician" : true
+          },
+          {
+               "firstName" : "Louis",
+               "lastName" : "OfficeClerk",
+               "password" : "officefish",
+               "email" : "louisPushedpaper@email.com",
+               "location" : "Buffalo, New York",
+               "isMusician" : true
+          },
+          {
+               "firstName" : "Nick",
+               "lastName" : "Conman",
+               "password" : "bullyfish",
+               "email" : "nickSuits@email.com",
+               "location" : "Baton Rouge, Louisiana",
+               "isMusician" : true
+          },
+          {
+               "firstName" : "Rochelle",
+               "lastName" : "Marketeer",
+               "password" : "tellyfish",
+               "email" : "rochadverts@email.com",
+               "location" : "Atlanta, Georgia",
+               "isMusician" : true
+          },
+          {
+               "firstName" : "Coach",
+               "lastName" : "FingerLickin'",
+               "password" : "chickenfish",
+               "email" : "fatmanRunningLaps@email.com",
+               "location" : "Atlanta, Georgia",
+               "isMusician" : true
+          },
+          {
+               "firstName" : "Ellis",
+               "lastName" : "tightShirt",
+               "password" : "strangefish",
+               "email" : "loveshisSkittles@email.com",
+               "city" : "Jacksonville, Mississippi",
+               "isMusician" : true
+          }
+     ],
+     "musicians" : [
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          }
+     ],
+     "instruments" : [
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          },
+          {
+
+          }
+     ],
+     "bands" : [
+          {
+
+          },
+          {
+
+          },
+          {
+
+          }
+     ]
+}
