@@ -1,0 +1,42 @@
+{
+  "name": "ensemble-me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/JonHake18/ensemble-me.git",
+  "author": "Matthew Kelly, Bradley , Jonathan Hake",
+  "license": "MIT",
+  "dependencies": {
+    "auth0-js": "^9.8.0",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.0",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "jquery": "^3.0.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.3",
+    "passport": "^0.4.0",
+    "passport-auth0": "^1.0.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.14.3",
+    "react": "^16.5.2",
+    "react-bootstrap": "^1.0.0-beta.1",
+    "react-dom": "^16.5.2",
+    "react-router": "^4.3.1",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "youtube-iframe": "^1.0.3",
+    "youtube-player": "^5.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.117"
+  },
+  "proxy": "http://localhost:3001"
+}

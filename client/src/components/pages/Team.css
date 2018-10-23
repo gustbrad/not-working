@@ -1,0 +1,26 @@
+#team-title {
+    border-bottom: 2px black solid;
+    font: 3vh black;
+    margin-bottom: 15px;
+}
+
+.col-sm-1 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.team-submit {
+    margin: 5px;
+}
+
+.col-sm-6 {
+    margin: auto auto; 
+}
+.col-sm-3 {
+    margin: auto auto; 
+}
+
+.external {
+    font-size: 2vh;
+}
+

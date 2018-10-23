@@ -1,0 +1,10 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Source Serif Pro', serif;
+}
+
+.content {
+  font-family: 'Roboto', sans-serif;
+}
