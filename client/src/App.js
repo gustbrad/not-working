@@ -5,7 +5,8 @@ import {
   Redirect,
 } from 'react-router-dom'
 import Wrapper from "./components/Wrapper";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
+import Nav2 from "./components/Nav/Nav2";
 import Home from "./components/pages/Home";
 import Team from "./components/pages/Team";
 import BandProfile from "./components/pages/BandProfile";
@@ -15,6 +16,7 @@ import FindBand from "./components/pages/FindBand";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Login from "./containers/LoginPage.jsx";
+import LogoutFunction from './containers/LogoutFunction.jsx';
 import SignUpPageMusician from './containers/SignUpPageMusician.jsx';
 import SignUpPageBand from './containers/SignUpPageBand.jsx';
 import Profile from "./components/pages/Profile";
@@ -77,7 +79,13 @@ class App extends Component {
   <Wrapper>
     <Router>
       <div>
-        <Nav />
+        
+        {this.state.authenticated ? (
+          <Nav2 />
+          ) : (
+          <Nav />
+        )}
+    
         <div className="container rounded border border-secondary shadow p-3 mb-5">
           <PropsRoute exact path="/" component={Home} toggleAuthenticateStatus={() => this.toggleAuthenticateStatus()} />
           <LoggedOutRoute path="/login" component={Login} toggleAuthenticateStatus={() => this.toggleAuthenticateStatus()} />
@@ -91,6 +99,7 @@ class App extends Component {
           <LoggedOutRoute path="/signupmusician" component={SignUpPageMusician}/>
           <LoggedOutRoute path="/signupband" component={SignUpPageBand}/>
           <PrivateRoute exact path="/profile" component={Profile} />
+          <Route path="/logout" component={LogoutFunction}/>
         </div>
       </div>
     </Router>
