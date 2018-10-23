@@ -14,7 +14,7 @@ import FindMusician from "./components/pages/FindMusician";
 import FindBand from "./components/pages/FindBand";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
-import Login from "./components/pages/Login";
+import Login from "./containers/LoginPage.jsx";
 import SignUpPageMusician from './containers/SignUpPageMusician.jsx';
 import SignUpPageBand from './containers/SignUpPageBand.jsx';
 import Profile from "./components/pages/Profile";
