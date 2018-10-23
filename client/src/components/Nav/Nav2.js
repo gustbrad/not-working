@@ -8,7 +8,7 @@ import LogoutFunction from '../../containers/LogoutFunction.jsx';
 
 
 
-const Nav = () => (
+const Nav2 = () => (
   <nav className="navbar navbar-expand-lg navbar-light">
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,8 +32,8 @@ const Nav = () => (
       </NavListItem>
       <NavListItem>
         
-        <Link to="/login" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"}>
-          Log In
+        <Link to="/logout" className={window.location.pathname === "/logout" ? "nav-link active" : "nav-link"}>
+          Log Out
           </Link>
       </NavListItem>
     </NavList>
@@ -65,4 +65,4 @@ const Nav = () => (
   </nav>
 );
 
-export default Nav;
+export default Nav2;
