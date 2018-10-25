@@ -1,0 +1,54 @@
+{
+  "name": "ensemble-me",
+  "version": "1.0.0",
+  "description": "Node/Express API for React FrontEnd",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start-react": "cd client && yarn start",
+    "start": "concurrently \"nodemon server.js --ignore 'client/*'\" \"npm run start-react\"",
+    "build": "cd client && npm run build",
+    "mocha-test": "npm run mocha -u tdd --reporter spec --exit",
+    "reacttest": "cd client && npm run test",
+    "test": "npm run mocha-test && npm run reacttest",
+    "seed": "node scripts/seedDB.js",
+    "eject": "cd client && npm run eject",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonHake18/ensemble-me.git"
+  },
+  "author": "Matthew Kelly, Bradley, Jonathan Hake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonHake18/ensemble-me/issues"
+  },
+  "homepage": "https://github.com/JonHake18/ensemble-me#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.4",
+    "nodemon": "^1.18.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2",
+    "querystring": "^0.2.0",
+    "validator": "^10.8.0",
+    "youtube-embed-video": "^1.1.0",
+    "youtube-player": "^5.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}

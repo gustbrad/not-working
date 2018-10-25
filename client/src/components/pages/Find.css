@@ -1,0 +1,24 @@
+#city, #state {
+    border: 2px #ababab dashed;
+    margin-top: 4px;
+    padding: 4px;
+    font-size: 4vh;
+}
+#city-input, #state-input {
+    border: 2px #ababab dashed;
+    margin-top: 4px;
+    padding: 4px;
+}
+
+.find-submit {
+    margin-top: 12px;
+    font-size: 4vh;
+}
+
+.btn-outline-secondary {
+    color: black;
+}
+
+.input-group {
+    margin: auto auto;
+}
